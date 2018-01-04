@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title> Calcula el día de la semana</title>
+
+    <script type="text/javascript" src="diaSemana.js"></script>
+
+    <meta charset="UTF-8">
+
+    <!-- Este HTML es muy sencillo, no contiene ningún elemento. Sólo sirve de contenedor del js (se mostrará por ALERT) -->
+
+    <script> 
+
+
+
+        // Inicio del js para calcular el día de la semana
+
+        
+
+        /***************************************************
+
+        *             
+
+        *               - IMPORTANTE -
+
+        *
+
+        *                AÑO = INT
+
+        *                MES = STRING
+
+        *                DIA = INT
+
+        *
+
+        *  ¡¡¡¡ NO INTRODUCIR NINGUN OTRO TIPO DE VALOR !!!!
+
+        *
+
+        ****************************************************/
+
+        
+
+        var dia = prompt("Introduce el día en números");
+
+        var mes = prompt("Introduce el mes en letras");
+
+        var anyo = prompt("Introduce el año en números");
+
+        dia = parseInt(dia);
+
+        anyo = parseInt (anyo);
+
+        
+</head>
+
+<body>
+
+
+        var resultado = algoritmo(dia, mes, anyo);
+
+        
+
+        // Mostrar dia de la semana
+
+        
+
+        if (resultado == 0){
+
+            alert("¡El día "+ dia + " de "+mes+ " de " + anyo + " es domingo!");
+
+        }else if (resultado == 1){
+
+            alert("¡El día "+ dia + " de "+mes+ " de " + anyo + " es lunes!");
+
+        } else if (resultado == 2){
+
+            alert("¡El día "+ dia + " de "+mes+ " de " + anyo + " es martes!");
+
+        }else if (resultado  == 3){
+
+            alert("¡El día "+ dia + " de "+mes+ " de " + anyo + " es miércoles!");
+
+        }else if (resultado  == 4){
+
+            alert("¡El día "+ dia + " de "+mes+ " de " + anyo + " es jueves!");
+
+        }else if (resultado  == 5){
+
+            alert("¡El día "+ dia + " de "+mes+ " de " + anyo + " es viernes!");
+
+        }else if (resultado  == 6){
+
+            alert("¡El día "+ dia + " de "+mes+ " de " + anyo + " es sábado!");
+
+        }
+
+        
+
+    </script>
+
+</body>
+
+</html>
